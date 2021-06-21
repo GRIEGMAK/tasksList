@@ -73,14 +73,15 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-#   production:
-#     url: <%= ENV['MY_APP_DATABASE_URL'] %>
+  # production:
+  #   url: <%= ENV['MY_APP_DATABASE_URL'] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: tasklist_production
-  username: tasklist
-  password: <%= ENV['TASKLIST_DATABASE_PASSWORD'] %>
+  # <<: *default
+  # database: tasklist_production
+  # username: tasklist
+  # password: <%= ENV['TASKLIST_DATABASE_PASSWORD'] %>
+  url:  postgres://yxewaxutugjdlm:93f7f4b066d9d528f85363a272aea1cf7a3a3c1670346bb9daa535f3acb90f1e@ec2-54-228-99-58.eu-west-1.compute.amazonaws.com:5432/dbndrg1bhivefp
